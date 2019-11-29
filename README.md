@@ -20,16 +20,15 @@ At this point a Model Predictive Controller is built and solved at every control
 ## Running the tests
 
 For running this project you have to do:
+```
   - catkin_make (to create build and devel folders)
   - source devel/setup.bash
   - roslaunch barc MAIN_LAUNCH.launch
   
 ```
-DISCRETE_KinDyn_MPC_SF.m
-```
 
 
-## Graphical results
+## Video
 ![](https://github.com/euge2838/Autonomous_Guidance_MPC_and_LQR-LMI/blob/master/circuit.png)
 ![alt text](https://github.com/euge2838/Autonomous_Guidance_MPC_and_LQR-LMI/blob/master/elapsedTime.png)
 ![alt text](https://github.com/euge2838/Autonomous_Guidance_MPC_and_LQR-LMI/blob/master/errorsDISTURB.png)
