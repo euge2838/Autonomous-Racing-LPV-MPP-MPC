@@ -29,7 +29,7 @@ For running this project you have to do:
 
 
 ## Video
-[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=NrFt6ZmRRY0/0.jpg)](https://www.youtube.com/watch?v=NrFt6ZmRRY0)
+[![IMAGE ALT TEXT HERE](Kazam_screenshot_00000.png)](https://www.youtube.com/watch?v=NrFt6ZmRRY0)
 
 
 ## References
