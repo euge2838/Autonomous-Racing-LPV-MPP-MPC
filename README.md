@@ -29,9 +29,7 @@ For running this project you have to do:
 
 
 ## Video
-![](https://github.com/euge2838/Autonomous_Guidance_MPC_and_LQR-LMI/blob/master/circuit.png)
-![alt text](https://github.com/euge2838/Autonomous_Guidance_MPC_and_LQR-LMI/blob/master/elapsedTime.png)
-![alt text](https://github.com/euge2838/Autonomous_Guidance_MPC_and_LQR-LMI/blob/master/errorsDISTURB.png)
+![](https://github.com/euge2838/LPV-MPP-MPC/FINAL.mp4)
 
 ## References
 * Eugenio Alcalá, Vicenç Puig and Joseba Quevedo. planner ...
