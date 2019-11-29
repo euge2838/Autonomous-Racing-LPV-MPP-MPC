@@ -29,7 +29,8 @@ For running this project you have to do:
 
 
 ## Video
-![](https://github.com/euge2838/LPV-MPP-MPC/FINAL.mp4)
+[![IMAGE ALT TEXT HERE](https://www.youtube.com/watch?v=NrFt6ZmRRY0/0.jpg)](https://www.youtube.com/watch?v=NrFt6ZmRRY0)
+
 
 ## References
 * Eugenio Alcalá, Vicenç Puig and Joseba Quevedo. planner ...
