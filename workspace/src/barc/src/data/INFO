@@ -1,0 +1,6 @@
+
+Para plotear los resultados tenemos que irnos a Matlab.
+
+En la carpeta ~/GitHub/barc/results_simu_test/ se crea la carpeta con el nombre descrito en el nodo de ROS 'controllerMain.py' 
+
+Añadir a la raiz de Matlab la carpeta Map_folder y la carpeta en cuestion que queremos simular y lanzar el script 'Plotting_SIM_Results.m'

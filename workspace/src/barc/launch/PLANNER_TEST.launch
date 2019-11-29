@@ -1,0 +1,30 @@
+<launch>
+
+    <!-- SYSTEM MODEL -->
+    <!-- vehicle parameters -->
+    <param name="lf"            type="double" value="0.125" />
+    <param name="lr"            type="double" value="0.125" />
+    <param name="m"             type="double" value="1.98" />
+    <param name="Iz"            type="double" value="0.03" />
+    <param name="Cf"            type="double" value="60.0" />
+    <param name="Cr"            type="double" value="60.0" />
+    <param name="mu"            type="double" value="0.05" />
+        
+
+    <!-- Track parameters -->
+    <param name="trackShape" type="str" value="L_shape" />
+
+
+    <!-- TRAJECTORY PLANNING -->
+    <node pkg="barc" type="plannerMain.py" name="TrajectoryPlanner" output="screen"> 
+         <param name="Planning_Track"   type="int"      value="1" /> 
+         <param name="max_vel"          type="double"   value="4.4" />
+         <param name="min_vel"          type="double"   value="0.9" />
+         <param name="N"                type="int"      value="40" /> 
+         <param name="Frecuency"        type="int"      value="20" /> 
+         <param name="halfWidth"        type="double"   value="0.3" />
+         <param name="Visualization"    type="int"      value="1" />
+         <param name="Testing"          type="int"      value="1" />
+    </node>   
+
+</launch>

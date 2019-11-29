@@ -1,0 +1,122 @@
+<launch>
+
+    <!-- SYSTEM MODEL -->
+    <!-- vehicle parameters -->
+    <param name="lf"            type="double" value="0.125" />
+    <param name="lr"            type="double" value="0.125" />
+    <param name="m"             type="double" value="1.98" />
+    <param name="Iz"            type="double" value="0.03" />
+    <param name="Cf"            type="double" value="60.0" />
+    <param name="Cr"            type="double" value="60.0" />
+    <param name="mu"            type="double" value="0.05" />
+        
+
+
+
+
+    <!-- Track parameters -->
+<!--    <param name="trackShape" type="str" value="oval" />  -->
+    <!-- TRAJECTORY PLANNING -->
+<!--    <node pkg="barc" type="plannerMain.py" name="TrajectoryPlanner" output="screen">   -->
+<!--        <param name="Planning_Track"   type="int"      value="1" />    -->
+<!--        <param name="max_vel"          type="double"   value="4.4" />   -->
+<!--        <param name="min_vel"          type="double"   value="0.9" />  -->
+<!--        <param name="N"                type="int"      value="43" />   -->
+<!--        <param name="Frecuency"        type="int"      value="20" />   -->
+<!--        <param name="halfWidth"        type="double"   value="0.3" />  -->
+<!--        <param name="Visualization"    type="int"      value="0" />   -->
+<!--        <param name="Testing"          type="int"      value="0" />   -->
+<!--    </node>   -->
+
+
+
+
+    <!-- Track parameters -->
+    <param name="trackShape" type="str" value="L_shape" />
+
+    <!-- TRAJECTORY PLANNING -->
+    <node pkg="barc" type="plannerMain.py" name="TrajectoryPlanner" output="screen"> 
+        <param name="Planning_Track"   type="int"      value="1" />  
+        <param name="max_vel"          type="double"   value="5.0" /> 
+        <param name="min_vel"          type="double"   value="0.9" />
+        <param name="N"                type="int"      value="40" /> 
+        <param name="Frecuency"        type="int"      value="20" /> 
+        <param name="halfWidth"        type="double"   value="0.2" />
+        <param name="Visualization"    type="int"      value="0" /> 
+        <param name="Testing"          type="int"      value="0" /> 
+    </node> 
+
+
+
+    <!-- VISUALIZATION -->
+    <node pkg="barc" type="plotCarTrajectory.py" name="visualization" output="screen">
+        <param name="plotGPS"     type="bool" value="true" />
+    </node>
+
+
+
+    <!-- SIMULATOR -->
+    <node pkg="barc" type="vehicleSimulator.py" name="simulator" output="screen">
+        <param name="dt"          type="double" value="0.005" />
+        <param name="init_vx"     type="double" value="0.2" />
+        
+        <!-- sensor freq update -->
+        <param name="gps_freq_update" type="double" value="1000.0" />
+        
+        <!-- delay in the simulator -->
+        <param name="lowLevelDyn" type="bool" value="false" />
+        <param name="delay_df"    type="double" value="0.0" />
+        <param name="delay_a"     type="double" value="0.0" />
+        
+        <!-- simulator model parameters -->
+        <param name="mu"          type="double" value="0.05" />
+        
+        <!-- Tire model parameters -->
+        <param name="B"           type="double" value="6.0" />
+        <param name="C"           type="double" value="1.6" />
+        <param name="c_f"         type="double" value="0.8" />
+        
+        <!-- simulator sensor noise -->
+        <param name="n_bound"     type="double" value="0.5" />
+        <param name="x_std"       type="double" value="0.000" />
+        <param name="y_std"       type="double" value="0.000" />  
+        <param name="psi_std"     type="double" value="0.000" />  
+        <param name="v_std"       type="double" value="0.000" />    
+        <param name="psiDot_std"  type="double" value="0.000" />
+        <param name="ax_std"      type="double" value="0.0" />
+        <param name="ay_std"      type="double" value="0.0" />        
+    </node>
+    
+
+
+    
+    <!--DYNAMIC OBSERVER-->  
+    <node pkg="barc"              type="stateEstimator.py" name="state_estimator" output="screen">
+        <!-- delay in state estimator -->
+         <param name="delay_df"   type="double" value="0.0" />
+         <param name="delay_a"    type="double" value="0.0" />
+         <!-- ekf properties -->
+          <param name="thReset"   type="double" value="0.5" />
+          <param name="vSwitch"   type="double" value="1.3" />
+          <param name="psiSwitch" type="double" value="1.2" />
+    </node>
+
+
+
+
+    <!-- LOW LEVEL CONTROLLER -->
+    <node pkg="barc"              type="controllerLowLevel.py" name="low_level_controller" /> 
+
+
+
+
+    <!-- CONTROL -->
+    <node pkg="barc" type="controllerMain.py" name="control" output="screen">
+        <param name="mode"        type="str"   value="simulations" />
+        <param name="saveData"    type="bool"  value="true" />
+        <param name="N"           type="int"   value="8" />
+    </node>
+
+
+
+</launch>
