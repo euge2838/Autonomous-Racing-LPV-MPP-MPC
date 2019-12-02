@@ -2,9 +2,15 @@
 Planning and control for autonomous racing vehicles
 
 This project allows you to solve the autonomous racing driving problem using advanced control theory. 
-Particularly, here it is presented a collaborative work using optimal strategies. The MPC strategy is used online for computing the optimal trajectory maximizing vehicle velocity but also for computing the optimal control actions that make the vehicle to follow the computed references.
+Particularly, here it is presented a collaborative work using optimal strategies. The Model Predictive Control (MPC) strategy is used online for computing the optimal trajectory maximizing vehicle velocity but also for computing the optimal control actions that make the vehicle to follow the computed references.
 
 ### Prerequisites
+
+
+
+### The vehicle model
+The planning-control-estimation diagram is shown in the following figure.
+![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/Berkeley_control_planning_diagram.png)
 
 
 ### The vehicle model
@@ -12,10 +18,13 @@ Particularly, here it is presented a collaborative work using optimal strategies
 
 
 ### MPC for planning
-
+The trajectory planning for racing is solved using the MPC technique. The cost function adresses the lap time minimization as well as the smothness of the lateral motion by reducing as much as possible the understeer and oversteer behaviours.
+This algorithm is launched every 33 ms.
 
 ### MPC for control
-At this point a Model Predictive Controller is built and solved at every control iteration for finding the optimal control actions (linear and angular velocities).
+At this point an MPC is built and solved at every control iteration (33 ms) for figure out the optimal control actions (steering and rear wheel acceleration).
+
+
 
 
 ## Running the tests
@@ -34,8 +43,8 @@ For running this project you have to do:
 
 
 ## References
-* Eugenio Alcalá, Vicenç Puig and Joseba Quevedo. planner ...
-* Eugenio Alcalá, Vicenç Puig and Joseba Quevedo. controller...
+* ![Eugenio Alcalá, Vicenç Puig and Joseba Quevedo. planner ...]()
+* Eugenio Alcalá, Vicenç Puig and Joseba Quevedo. controller ...
 
 
 
