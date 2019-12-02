@@ -8,7 +8,7 @@ Particularly, here it is presented a collaborative work using optimal strategies
 
 
 ### The vehicle model
-
+[![IMAGE ALT TEXT HERE](variables_representation.eps)]()
 
 ### MPC for planning
 
