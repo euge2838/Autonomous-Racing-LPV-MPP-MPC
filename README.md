@@ -8,7 +8,7 @@ Particularly, here it is presented a collaborative work using optimal strategies
 
 
 ### The vehicle model
-![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/variables_representation.eps)
+![](https://github.com/euge2838/LPV-MPP-MPC/variables_representation.eps)
 
 
 ### MPC for planning
