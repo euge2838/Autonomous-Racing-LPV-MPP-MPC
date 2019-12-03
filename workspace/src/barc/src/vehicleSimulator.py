@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 """
-    File name: barc_simulator_dyn.py
+    File name: vehicleSimulator.py
     Author: Shuqi Xu
     Email: shuqixu@kth.se
+    Updated by Eugenio Alcala
+    Email: euge2838@gmail.com
     Python Version: 2.7.12
 """
 # ---------------------------------------------------------------------------
@@ -96,13 +98,6 @@ def main():
 		gps.gps_pub()
 		imu.imu_pub()
 		enc.enc_pub()
-
-
-		# # ESTO SIN COMENTAR ES COMO ESTABA ANTES...
-		# counter += 1
-		# if counter == 5:
-		# 	enc.enc_pub()
-		# 	counter = 0
 
 		sim.rate.sleep()
 

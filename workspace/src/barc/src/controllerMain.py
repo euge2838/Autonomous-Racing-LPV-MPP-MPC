@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 """
-    File name: Learning-LPV-MPC.py
+    File name: controllerMain.py
     Author: Eugenio Alcala
-    Email: eugenio.alcala@upc.edu.edu
-    Date: 09/30/2018
+    Email: eugenio.alcala@upc.edu
+    Date: 21/11/2019
     Python Version: 2.7.12
 """
 

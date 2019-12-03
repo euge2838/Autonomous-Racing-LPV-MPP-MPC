@@ -8,6 +8,9 @@
 #
 # Author: J. Noonan
 # Email: jpnoonan@berkeley.edu
+# 
+# Updated by Eugenio Alcala
+# Email: euge2838@gmail.com
 #
 # This code provides a way to see the car's trajectory, orientation, and velocity profile in 
 # real time with referenced to the track defined a priori.
