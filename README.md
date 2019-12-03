@@ -16,6 +16,8 @@ The LPV paradigm allows to represent a given non-linear representation into a ps
 The model used in planning, control and estimation algorithms is the bicycle representation where the inputs are the front steering angle and the rear wheel linear acceleration.
 <img src="https://camo.githubusercontent.com/..." data-canonical-src="https://github.com/euge2838/LPV-MPP-MPC/blob/master/variables_representation.png" width="200" height="400" />
 
+<img src="https://github.com/euge2838/LPV-MPP-MPC/blob/master/variables_representation.png" alt="alt text" width="100" height="200">
+
 ![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/variables_representation.png)
 
 
