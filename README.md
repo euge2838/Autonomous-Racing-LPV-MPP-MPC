@@ -3,17 +3,20 @@ Planning and control for autonomous racing vehicles. This project allows you to 
 Particularly, here it is presented a collaborative work using optimal strategies. The Model Predictive Control (MPC) strategy is used online for computing the optimal trajectory maximizing vehicle velocity but also for computing the optimal control actions that make the vehicle to follow the computed references.
 
 ### The vehicle model
-The planning-control-estimation diagram is shown in the following figure.
+The planning-control-estimation diagram is shown in the following figure
+
 ![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/Berkeley_control_planning_diagram.png)
 
 
 ### LPV modeling
 The LPV paradigm allows to represent a given non-linear representation into a pseudo-linear form as
+
 <img src="https://github.com/euge2838/LPV-MPP-MPC/blob/master/vehicle_modeling.png" alt="alt text" width="521" height="259">
 <!-- ![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/vehicle_modeling.png) -->
 
 ### The vehicle model
-The model used in planning, control and estimation algorithms is the bicycle representation where the inputs are the front steering angle and the rear wheel linear acceleration.
+The model used in planning, control and estimation algorithms is the bicycle representation where the inputs are the front steering angle and the rear wheel linear acceleration
+
 ![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/variables_representation.png)
 
 
@@ -23,8 +26,6 @@ This algorithm is launched every 33 ms.
 
 ### MPC for control
 At this point an MPC is built and solved at every control iteration (33 ms) for figure out the optimal control actions (steering and rear wheel acceleration).
-
-
 
 
 ## Running the tests
