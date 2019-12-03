@@ -9,12 +9,11 @@ The planning-control-estimation diagram is shown in the following figure.
 
 ### LPV modeling
 The LPV paradigm allows to represent a given non-linear representation into a pseudo-linear form as
-![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/vehicle_modeling.png | width=100)
+<img src="https://github.com/euge2838/LPV-MPP-MPC/blob/master/vehicle_modeling.png" alt="alt text" width="300" height="400">
 
 
 ### The vehicle model
 The model used in planning, control and estimation algorithms is the bicycle representation where the inputs are the front steering angle and the rear wheel linear acceleration.
-
 <img src="https://github.com/euge2838/LPV-MPP-MPC/blob/master/variables_representation.png" alt="alt text" width="300" height="400">
 
 <!--![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/variables_representation.png)-->
