@@ -9,7 +9,7 @@ The planning-control-estimation diagram is shown in the following figure.
 
 ### LPV modeling
 The LPV paradigm allows to represent a given non-linear representation into a pseudo-linear form as
-![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/vehicle_modeling.png)
+![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/vehicle_modeling.png | width=100)
 
 
 ### The vehicle model
