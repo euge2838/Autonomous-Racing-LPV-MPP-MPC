@@ -1,12 +1,6 @@
 # LPV-MPP-MPC
-Planning and control for autonomous racing vehicles
-
-This project allows you to solve the autonomous racing driving problem using advanced control theory. 
+Planning and control for autonomous racing vehicles. This project allows you to solve the autonomous racing driving problem using advanced control theory. 
 Particularly, here it is presented a collaborative work using optimal strategies. The Model Predictive Control (MPC) strategy is used online for computing the optimal trajectory maximizing vehicle velocity but also for computing the optimal control actions that make the vehicle to follow the computed references.
-
-### Prerequisites
-
-
 
 ### The vehicle model
 The planning-control-estimation diagram is shown in the following figure.
@@ -14,6 +8,7 @@ The planning-control-estimation diagram is shown in the following figure.
 
 
 ### The vehicle model
+The model used in planning, control and estimation algorithms is the bicycle representation where the inputs are the front steering angle and the rear wheel linear acceleration.
 ![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/variables_representation.png)
 
 
@@ -28,8 +23,7 @@ At this point an MPC is built and solved at every control iteration (33 ms) for 
 
 
 ## Running the tests
-
-For running this project you have to do:
+The codes are in Python 2.7 and the structure is made in ROS. Hence, for running this project you have to do:
 ```
   - catkin_make (to create build and devel folders)
   - source devel/setup.bash
@@ -38,7 +32,7 @@ For running this project you have to do:
 ```
 
 
-## Video
+## Resulting video
 [![IMAGE ALT TEXT HERE](Kazam_screenshot_00000.png)](https://www.youtube.com/watch?v=NrFt6ZmRRY0)
 
 
