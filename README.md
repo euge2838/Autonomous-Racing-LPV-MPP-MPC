@@ -42,9 +42,11 @@ The codes are in Python 2.7 and the structure is made in ROS. Hence, for running
 
 
 ## References
-* ![Eugenio Alcalá, Vicenç Puig and Joseba Quevedo. planner ...]()
-* Eugenio Alcalá, Vicenç Puig and Joseba Quevedo. controller ...
-* ![https://digital-library.theiet.org/content/journals/10.1049/iet-cta.2017.1154](...)
+* Trajectory planner presented in:  Alcala, E., Puig, V. & Quevedo, J. (2019). LPV-MP Planning for Autonomous Racing Vehicles considering Obstacles. Robotics and Autonomous Systems.
+
+* Controller presented in: Alcala, E., Puig, V., Quevedo, J., & Rosolia, U. (2019). Autonomous Racing using Linear Parameter Varying - Model Predictive Control (LPV-MPC). Control engineering practice.
+
+* Estimator presented in: Alcala, E., Puig, V., Quevedo, J., & Escobet, T. (2018). Gain-scheduling LPV control for autonomous vehicles including friction force estimation and compensation mechanism. IET Control Theory & Applications, 12(12), 1683-1693. (https://digital-library.theiet.org/content/journals/10.1049/iet-cta.2017.1154).
 
 
 
