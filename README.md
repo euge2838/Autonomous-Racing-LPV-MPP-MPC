@@ -44,6 +44,7 @@ The codes are in Python 2.7 and the structure is made in ROS. Hence, for running
 ## References
 * ![Eugenio Alcalá, Vicenç Puig and Joseba Quevedo. planner ...]()
 * Eugenio Alcalá, Vicenç Puig and Joseba Quevedo. controller ...
+* ![https://digital-library.theiet.org/content/journals/10.1049/iet-cta.2017.1154](...)
 
 
 
