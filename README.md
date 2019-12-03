@@ -6,7 +6,7 @@ Particularly, here it is presented a collaborative work using optimal strategies
 The planning-control-estimation diagram is shown in the following figure
 
 <!--![](https://github.com/euge2838/LPV-MPP-MPC/blob/master/Berkeley_control_planning_diagram.png) -->
-<img src="https://github.com/euge2838/LPV-MPP-MPC/blob/master/Berkeley_control_planning_diagram.png" alt="alt text" width="401" height="253">
+<img src="https://github.com/euge2838/LPV-MPP-MPC/blob/master/Berkeley_control_planning_diagram.png" alt="alt text" width="520" height="314">
 
 
 
