@@ -105,7 +105,7 @@
 
 
     <!-- LOW LEVEL CONTROLLER -->
-    <node pkg="barc"              type="controllerLowLevel.py" name="low_level_controller" /> 
+    <!-- <node pkg="barc"              type="controllerLowLevel.py" name="low_level_controller" /> -->
 
 
 
