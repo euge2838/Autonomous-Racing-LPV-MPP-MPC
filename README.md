@@ -32,7 +32,7 @@ At this point an MPC is built and solved at every control iteration (33 ms) for 
 
 
 ## Running the tests
-The codes are in Python 2.7 and the structure is made in ROS. Hence, for running this project you have to do:
+The codes are in Python 2.7 and the structure is made in ROS. Hence, for running this project you have to do the following inside your workspace folder:
 ```
   - catkin_make (to create build and devel folders)
   - source devel/setup.bash
